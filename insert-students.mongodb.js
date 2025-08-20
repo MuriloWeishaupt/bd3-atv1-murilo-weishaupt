@@ -1,10 +1,5 @@
-const database = "BD3-NoSQL-AtlasMongoDB";
-
-const collection = "bd3-nosql-atv1";
-
-use(database)
-
-db['bd3-nosql-atv1'].insertMany(
+//Inserindo 10 Alunos
+db[collection].insertMany(
 [
   {
     "cod_aluno": "A001",

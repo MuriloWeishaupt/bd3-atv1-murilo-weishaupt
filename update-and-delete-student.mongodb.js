@@ -1,12 +1,8 @@
-const database = "BD3-NoSQL-AtlasMongoDB";
+//Atualizando Nome, CPF e RG de uma aluno
+db[collection].updateOne(
+    {"cod_aluno": "A002"},
+    {$set: {nome: "Bruno Soares", cpf: "999.999.999-99", rg: "00.000.000-0"}}
+)
 
-const collection = "bd3-nosql-atv1";
-
-use(database)
-
-// db['bd3-nosql-atv1'].update(
-//     {"cod_aluno": "A002"},
-//     {$set: {nome: "Bruno Soares", cpf: "999.999.999-99", rg: "00.000.000-0"}}
-// )
-
-db['bd3-nosql-atv1'].deleteOne({"cod_aluno": "A005"});
+//Deletando um aluno 
+db[collection].deleteOne({"cod_aluno": "A005"});
