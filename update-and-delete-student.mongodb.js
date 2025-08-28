@@ -1,3 +1,9 @@
+const database = "BD3-NoSQL-AtlasMongoDB";
+
+const collection = "bd3-nosql-atv1";
+
+use(database)
+
 //Atualizando Nome, CPF e RG de uma aluno
 db[collection].updateOne(
     {"cod_aluno": "A002"},

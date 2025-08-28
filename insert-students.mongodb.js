@@ -1,3 +1,9 @@
+const database = "BD3-NoSQL-AtlasMongoDB";
+
+const collection = "bd3-nosql-atv1";
+
+use(database)
+
 //Inserindo 10 Alunos
 db[collection].insertMany(
 [
